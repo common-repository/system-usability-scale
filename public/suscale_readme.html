@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Readme SUS</title>
+	<link rel="stylesheet" href="css/suscale_readme.css">
+	<script type="text/javascript" src="scripts/suscale_readme.js"></script>
+</head>
+<body>
+	<h1>Readme of System Usability Scale, plugin for Wordpress</h1>
+	<div class="container">
+		<section class="child">
+			<h3>General Informations about System Usability Scale</h3>
+			<div class="text">
+				<p>
+					This plugin is useful when you want to know how usable your system is, based on the users experience. If you want to know more about what System Usability Scale is, I suggest you to click <a id="wikipedia">here</a>.
+					<strong>Attention</strong>: when you install this plugin, two new pages will be created at {your-domain}/<em>system-usability-scale</em> and {your-domain}/<em>sus-results</em>. Make sure there are no pages on this website with these addresses.
+				</p>
+			</div>
+		</section>
+		<section class="child">
+			<h3 id="whats_sus">When should i use this plugin? How simple is?</h3>
+			<div class="text">
+				<p>
+					Imagine you have a factory called "MyFactory" and this is divided into some parts called "production chain-1", "production chain-2" and go on. Now, imagine that you have a website for "MyFactory" and a page for each of its production chain. You can add to these pages a <a href="#create_new_system">SUS button</a> that allows people to submit a System Usability Scale:  wherever you write the [suscale] shortcode on your page, wordpress will create a special button that redirects to the questionnaire page. </br>But now you can think bigger: you can host more factories on the same site, and to define which system it belongs to, just use the macro parameter. For example, on a second factory page you can write to [suscale macro="MyFactory2"], and now that system will be part of MyFactory2. To have more details on how to use this shortcode, go to <a href="#create_new_system">How to use the shortcode [suscale]?</a>. 
+				</p>
+			</div>
+		</section>
+		<section class="child">
+			<h3 id="create_new_system">How to use the shortcode [suscale]?</h3>
+			<div class="text">
+				<p>
+					Creating a new <a href="#whats_sus">system</a> is very simple. You've just to add this shortcode to a post (article, page, etc.): [suscale macro= "macro_name" require_login="true"]. At that point, in that post, a button will appear which redirects anyone who clicks on it to the questionnaire page. Now, take a look on the parameter you can pass into: 
+					<ul>
+						<li>
+							<span class="text_parameter"><strong>macro</strong>: </span><span class="text_li">you can choose any name for a macro, but this name works like a key: any other system declared with that <strong>same macro</strong> will be part of that. You can change this value, by changing the macro declared into shortcode.</span>
+						</li>
+						<li>
+							<span class="text_parameter"><strong>required_login</strong>: </span><span class="text_li">you can pass only "true" or "false". If true, only registered users can submit this particular questionnaire. If not specified, this parameter have value "true".</span>
+					  	</li>
+					</ul>
+				</p>
+			</div>
+		</section>
+		<section class="child">
+			<h3>About the pages added by this plugin</h3>
+			<div class="text">
+				<p>
+					Once you installed this plugin, you'll see on your website's section page this two: <em>System Usability Scale</em> and <em>SUS - Results</em>. The first of them is the page where people will be redirected after clicking on the <a href="#create_new_system">SUS button</a>. You can edit that page, but you shouldn't edit the core of that page. Same discussion about the other one. If you make some mistakes by editing that page, i suggest you to just deactivate and reactivate this plugin, to reload the default pages. <strong>Don't uninstall: this will delete all data stored by this plugin!</strong>  
+				</p>
+			</div>
+		</section>
+		<section class="child">
+			<h3 id="settings_page">What can i do in settings-page?</h3>
+			<div class="text">
+				<p>
+					A component, is a post which have the shortcode inside. The actual name of the various components are those wrote inside the textbox.
+					You can change the names of any single component: write the new name, click <em>Change</em> and then click on <em>Submit changes</em> to apply. More changes are permitted with single submit.
+					Also, you're able to delete some component and eventually also the sus submitted for it. Don't worry, <em>Delete</em> will not delete the webpage, but only the button on that post.
+					After all, you can make a search among all sus submitted.  
+				</p>
+			</div>
+		</section>
+	</div>
+
+</body>
+</html>

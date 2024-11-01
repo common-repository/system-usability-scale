@@ -1,0 +1,36 @@
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.child {
+	border-bottom: 1px solid white;
+  	padding: 3rem;
+	font-size: 1.4rem;
+	background: lightgray;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.child p, .child ul li{
+	text-align: left;
+}
+li{
+	padding-bottom: 0.8rem;
+	display: flex;
+}
+.text_li{
+	padding-left: 1rem;
+}
+
+#wikipedia{
+	cursor: pointer;
+}
+
+#wikipedia:hover{
+	text-decoration: underline;
+	color : #00008b;
+	transition : opacity .2s ease-in-out,color .2s ease-in-out;
+}
